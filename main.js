@@ -224,6 +224,8 @@ function injectGitHubStats() {
     <div class="stats-row">
       <img src="https://github-readme-streak-stats.herokuapp.com/?user=onecany&theme=dark&hide_border=true"
            alt="GitHub Streak" loading="lazy" />
+      <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=onecany&hide_title=true&hide_border=true&show_icons=true&text_color=f0f6fc&icon_color=ff2d95&bg_color=0a0a12&border_color=1a0a2e"
+           alt="GitHub Stats" loading="lazy" style="border-radius: 8px;" />
     </div>
   `;
 }
