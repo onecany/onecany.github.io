@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skills | OneCany</title>
+  <meta name="description" content="OneCany's tech stack — languages, tools, and frameworks.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Orbitron:wght@600;700;800;900&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+</head>
+<body>
+  <canvas id="particles-canvas"></canvas>
+  <div class="grid-bg"></div>
+
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">CANY<span class="dot">.</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="skills.html" class="active">Skills</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <div class="page-wrapper">
+    <section class="hero" style="min-height: auto; padding-top: 8rem; padding-bottom: 2rem;">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">// tech_stack</span>
+          <h1 class="section-title" style="font-size: clamp(2.5rem, 5vw, 3.5rem);">Skills & Tools</h1>
+          <div class="section-line"></div>
+        </div>
+      </div>
+    </section>
+
+    <section style="padding-top: 0;">
+      <div class="container">
+        <!-- Core Skills -->
+        <div class="skills-grid">
+          <div class="skill-card reveal reveal-delay-1">
+            <div class="skill-card-icon">🧠</div>
+            <div class="skill-card-title">AI & Machine Learning</div>
+            <div class="skill-card-desc">Building intelligent systems with modern ML frameworks and data-driven approaches.</div>
+            <div class="skill-tags">
+              <span class="skill-tag">PyTorch</span>
+              <span class="skill-tag">TensorFlow</span>
+              <span class="skill-tag">scikit-learn</span>
+              <span class="skill-tag">NLP</span>
+            </div>
+          </div>
+
+          <div class="skill-card reveal reveal-delay-2">
+            <div class="skill-card-icon">📊</div>
+            <div class="skill-card-title">Data & Finance</div>
+            <div class="skill-card-desc">Transforming complex datasets into clear, actionable insights for financial and analytical use cases.</div>
+            <div class="skill-tags">
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">Pandas</span>
+              <span class="skill-tag">SQL</span>
+              <span class="skill-tag">MySQL</span>
+              <span class="skill-tag">MongoDB</span>
+            </div>
+          </div>
+
+          <div class="skill-card reveal reveal-delay-3">
+            <div class="skill-card-icon">🌐</div>
+            <div class="skill-card-title">Web Development</div>
+            <div class="skill-card-desc">Full-stack engineering with a focus on clean architecture and extensible code design.</div>
+            <div class="skill-tags">
+              <span class="skill-tag">TypeScript</span>
+              <span class="skill-tag">CSS</span>
+              <span class="skill-tag">HTML</span>
+              <span class="skill-tag">APIs</span>
+              <span class="skill-tag">REST</span>
+            </div>
+          </div>
+
+          <div class="skill-card reveal reveal-delay-4">
+            <div class="skill-card-icon">⚙️</div>
+            <div class="skill-card-title">DevOps & Systems</div>
+            <div class="skill-card-desc">Linux administration, CI/CD pipelines, and infrastructure automation.</div>
+            <div class="skill-tags">
+              <span class="skill-tag">Linux</span>
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">Docker</span>
+              <span class="skill-tag">CI/CD</span>
+            </div>
+          </div>
+
+          <div class="skill-card reveal reveal-delay-5">
+            <div class="skill-card-icon">🔧</div>
+            <div class="skill-card-title">Languages</div>
+            <div class="skill-card-desc">Multi-language proficiency for choosing the right tool for every problem.</div>
+            <div class="skill-tags">
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">Go</span>
+              <span class="skill-tag">TypeScript</span>
+              <span class="skill-tag">SQL</span>
+            </div>
+          </div>
+
+          <div class="skill-card reveal">
+            <div class="skill-card-icon">📱</div>
+            <div class="skill-card-title">Platforms & Tools</div>
+            <div class="skill-card-desc">Ecosystem fluency across major development platforms and collaboration tools.</div>
+            <div class="skill-tags">
+              <span class="skill-tag">GitHub</span>
+              <span class="skill-tag">VS Code</span>
+              <span class="skill-tag">Xiaomi</span>
+              <span class="skill-tag">Discord</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tech Logos -->
+        <div class="mt-4 reveal">
+          <div class="terminal-card">
+            <div class="terminal-header">
+              <div class="terminal-dot red"></div>
+              <div class="terminal-dot yellow"></div>
+              <div class="terminal-dot green"></div>
+              <span class="terminal-title">tools_inventory.log</span>
+            </div>
+            <div class="terminal-body">
+              <div><span class="prompt">$</span> <span class="cmd">ls /usr/local/bin/</span></div>
+              <div class="output mt-2" style="display: flex; flex-wrap: wrap; gap: 1rem;">
+                <span class="text-cyan">python3</span>
+                <span class="text-green">go</span>
+                <span class="text-magenta">node</span>
+                <span class="text-cyan">git</span>
+                <span class="text-green">docker</span>
+                <span class="text-magenta">vim</span>
+                <span class="text-cyan">tmux</span>
+                <span class="text-green">ssh</span>
+                <span class="text-magenta">curl</span>
+                <span class="text-cyan">ffmpeg</span>
+                <span class="text-green">sqlite3</span>
+                <span class="text-magenta">make</span>
+              </div>
+              <div class="mt-2"><span class="prompt">$</span> <span class="cmd">echo $SHELL</span></div>
+              <div class="output">/bin/zsh</div>
+              <div class="mt-2"><span class="prompt">$</span> <span class="cmd">cat /etc/os-release | head -1</span></div>
+              <div class="output">PRETTY_NAME="Linux"</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Top Languages -->
+        <div class="stats-row mt-4 reveal">
+          <img src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=onecany&hide_title=true&hide_border=true&layout=compact&langs_count=6&text_color=000&icon_color=fff&bg_color=0,52fa5a,4dfcff,c64dff&theme=graywhite"
+               alt="Top Languages" loading="lazy" style="border-radius: 8px;" />
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-social">
+            <a href="https://github.com/onecany" target="_blank" rel="noopener" title="GitHub">GH</a>
+            <a href="https://twitter.com/onecany" target="_blank" rel="noopener" title="Twitter/X">X</a>
+            <a href="mailto:onecany@outlook.com" title="Email">@</a>
+          </div>
+          <p class="footer-text">
+            Built with <span class="heart">♥</span> by CANY &copy; 2026
+          </p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

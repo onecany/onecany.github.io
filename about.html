@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | OneCany</title>
+  <meta name="description" content="About OneCany — Developer, Reader, Explorer. The story behind the code.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Orbitron:wght@600;700;800;900&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+</head>
+<body>
+  <canvas id="particles-canvas"></canvas>
+  <div class="grid-bg"></div>
+
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">CANY<span class="dot">.</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <div class="page-wrapper">
+    <section class="hero" style="min-height: auto; padding-top: 8rem; padding-bottom: 2rem;">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">// about_me</span>
+          <h1 class="section-title" style="font-size: clamp(2.5rem, 5vw, 3.5rem);">About Me</h1>
+          <div class="section-line"></div>
+        </div>
+      </div>
+    </section>
+
+    <section style="padding-top: 0;">
+      <div class="container">
+        <div class="about-grid">
+          <!-- Left: Text -->
+          <div class="about-text reveal">
+            <p>
+              大家好，我是<span class="highlight">江小生</span>。一个热爱技术、热爱生活的开发者。
+            </p>
+            <p>
+              我相信代码不只是工具，它是一种构建完美体系的艺术。
+              通过<span class="highlight">代码的重复使用和延展</span>，我们能够创造出优雅的层次结构，
+              让复杂的系统变得简洁而强大。
+            </p>
+            <p>
+              工作之余，我喜欢<span class="highlight">阅读</span>人物传记和心理学书籍，
+              用<span class="highlight">摄影</span>记录人文、建筑与风景，
+              骑行穿梭于城市与自然之间，
+              在<span class="highlight">旅行</span>中探索苏州、深圳、贵阳、宁波的每一处角落。
+            </p>
+
+            <div class="interest-tags mt-3">
+              <span class="interest-tag">编程</span>
+              <span class="interest-tag magenta">金融分析</span>
+              <span class="interest-tag">数据分析</span>
+              <span class="interest-tag purple">人工智能</span>
+              <span class="interest-tag">摄影</span>
+              <span class="interest-tag magenta">阅读</span>
+              <span class="interest-tag purple">骑行</span>
+              <span class="interest-tag">旅行</span>
+            </div>
+          </div>
+
+          <!-- Right: Terminal -->
+          <div class="reveal reveal-delay-2">
+            <div class="terminal-card">
+              <div class="terminal-header">
+                <div class="terminal-dot red"></div>
+                <div class="terminal-dot yellow"></div>
+                <div class="terminal-dot green"></div>
+                <span class="terminal-title">identity.sys</span>
+              </div>
+              <div class="terminal-body">
+                <div><span class="prompt">$</span> <span class="cmd">whoami</span></div>
+                <div class="output">江小生 (OneCany)</div>
+                <div class="mt-2"><span class="prompt">$</span> <span class="cmd">cat interests.json</span></div>
+                <div class="output">{</div>
+                <div class="output">&nbsp;&nbsp;"reading": {</div>
+                <div class="output">&nbsp;&nbsp;&nbsp;&nbsp;"types": ["人物传记", "个人成长", "社会文化", "心理学", "计算机科学"]</div>
+                <div class="output">&nbsp;&nbsp;},</div>
+                <div class="output">&nbsp;&nbsp;"photography": {</div>
+                <div class="output">&nbsp;&nbsp;&nbsp;&nbsp;"subjects": ["人文", "建筑", "风景"]</div>
+                <div class="output">&nbsp;&nbsp;},</div>
+                <div class="output">&nbsp;&nbsp;"travel": {</div>
+                <div class="output">&nbsp;&nbsp;&nbsp;&nbsp;"cities": ["苏州", "深圳", "贵阳", "宁波"]</div>
+                <div class="output">&nbsp;&nbsp;}</div>
+                <div class="output">}</div>
+                <div class="mt-2"><span class="prompt">$</span> <span class="cmd">uptime</span></div>
+                <div class="output"><span class="text-green">status: active</span> | passion: ∞</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Timeline -->
+        <div class="mt-4 reveal">
+          <h3 style="font-family: var(--font-display); font-size: 1.3rem; color: var(--neon-cyan); margin-bottom: 2rem; letter-spacing: 2px;">
+            JOURNEY.LOG
+          </h3>
+          <div class="timeline">
+            <div class="timeline-item reveal reveal-delay-1">
+              <div class="timeline-date">2024 → NOW</div>
+              <div class="timeline-title">AI & Financial Analysis</div>
+              <div class="timeline-desc">Exploring the intersection of artificial intelligence and financial data analysis. Building tools that make sense of complex data.</div>
+            </div>
+            <div class="timeline-item reveal reveal-delay-2">
+              <div class="timeline-date">2023 → 2024</div>
+              <div class="timeline-title">Data-Driven Development</div>
+              <div class="timeline-desc">Diving deep into data pipelines, analytics, and the art of turning raw numbers into actionable insights.</div>
+            </div>
+            <div class="timeline-item reveal reveal-delay-3">
+              <div class="timeline-date">2022 → 2023</div>
+              <div class="timeline-title">Full-Stack Engineering</div>
+              <div class="timeline-desc">Building end-to-end solutions. From databases to APIs to beautiful frontends. Code reuse and extensibility became core principles.</div>
+            </div>
+            <div class="timeline-item reveal reveal-delay-4">
+              <div class="timeline-date">EARLY DAYS</div>
+              <div class="timeline-title">The Beginning</div>
+              <div class="timeline-desc">First "Hello, World!" The spark that started everything. A world of possibilities opened up through a single line of code.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- WakaTime -->
+        <div class="mt-4 reveal" id="wakatime-container"></div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-social">
+            <a href="https://github.com/onecany" target="_blank" rel="noopener" title="GitHub">GH</a>
+            <a href="https://twitter.com/onecany" target="_blank" rel="noopener" title="Twitter/X">X</a>
+            <a href="mailto:onecany@outlook.com" title="Email">@</a>
+          </div>
+          <p class="footer-text">
+            Built with <span class="heart">♥</span> by CANY &copy; 2026
+          </p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

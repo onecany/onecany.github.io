@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CANY | OneCany</title>
+  <meta name="description" content="OneCany — Developer, Reader, Explorer. Building elegant hierarchies for maximum code reuse and extensibility.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Orbitron:wght@600;700;800;900&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+</head>
+<body>
+  <canvas id="particles-canvas"></canvas>
+  <div class="grid-bg"></div>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">CANY<span class="dot">.</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <div class="page-wrapper">
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <p class="hero-subtitle">system.initialized</p>
+        <h1 class="hero-title">
+          <span class="glitch" data-text="江小生">江小生</span>
+        </h1>
+        <p class="hero-desc">
+          Developer / Reader / Explorer<br>
+          热爱阅读、旅行、骑行<br><br>
+          <em>We're making the world a better place.</em><br>
+          Through constructing elegant hierarchies for maximum code reuse and extensibility.
+        </p>
+        <div class="hero-cta">
+          <a href="projects.html" class="btn btn-primary">View Projects →</a>
+          <a href="about.html" class="btn btn-outline">About Me</a>
+        </div>
+        <div class="hero-status">
+          <div class="hero-stat">
+            <div class="hero-stat-value" data-count="3890">0</div>
+            <div class="hero-stat-label">Commits</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-value" data-count="6">0</div>
+            <div class="hero-stat-label">Languages</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-value">∞</div>
+            <div class="hero-stat-label">Curiosity</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick About -->
+    <section style="padding: 4rem 0 6rem;">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">// who_am_i</span>
+          <h2 class="section-title">Developer Profile</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="terminal-card reveal reveal-delay-1">
+          <div class="terminal-header">
+            <div class="terminal-dot red"></div>
+            <div class="terminal-dot yellow"></div>
+            <div class="terminal-dot green"></div>
+            <span class="terminal-title">onecany@system ~ %</span>
+          </div>
+          <div class="terminal-body">
+            <div><span class="prompt">$</span> <span class="cmd">cat profile.json</span></div>
+            <div class="output">{</div>
+            <div class="output">&nbsp;&nbsp;"name": "江小生",</div>
+            <div class="output">&nbsp;&nbsp;"role": "Developer / Creator",</div>
+            <div class="output">&nbsp;&nbsp;"passion": ["编程", "金融分析", "人工智能", "摄影", "旅行"],</div>
+            <div class="output">&nbsp;&nbsp;"motto": "构建优雅层次结构，实现代码最大复用",</div>
+            <div class="output">&nbsp;&nbsp;"status": <span class="text-green">"active"</span></div>
+            <div class="output">}</div>
+            <div class="mt-2"><span class="prompt">$</span> <span class="typing-text" data-text="echo 'Hello, World! 江小生祝您今天愉快!'" style="color: var(--neon-cyan);"></span><span class="terminal-cursor"></span></div>
+          </div>
+        </div>
+
+        <div class="stats-row mt-4 reveal reveal-delay-2" id="github-stats"></div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-social">
+            <a href="https://github.com/onecany" target="_blank" rel="noopener" title="GitHub">GH</a>
+            <a href="https://twitter.com/onecany" target="_blank" rel="noopener" title="Twitter/X">X</a>
+            <a href="mailto:onecany@outlook.com" title="Email">@</a>
+          </div>
+          <p class="footer-text">
+            Built with <span class="heart">♥</span> by CANY &copy; 2026
+          </p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | OneCany</title>
+  <meta name="description" content="Projects and contributions by OneCany.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Orbitron:wght@600;700;800;900&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+</head>
+<body>
+  <canvas id="particles-canvas"></canvas>
+  <div class="grid-bg"></div>
+
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">CANY<span class="dot">.</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <div class="page-wrapper">
+    <section class="hero" style="min-height: auto; padding-top: 8rem; padding-bottom: 2rem;">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">// projects</span>
+          <h1 class="section-title" style="font-size: clamp(2.5rem, 5vw, 3.5rem);">Projects</h1>
+          <div class="section-line"></div>
+        </div>
+      </div>
+    </section>
+
+    <section style="padding-top: 0;">
+      <div class="container">
+        <div class="projects-grid">
+
+          <!-- Featured: Personal Site -->
+          <div class="project-card project-featured reveal">
+            <div class="project-card-visual">
+              <div style="text-align: center;">
+                <div style="font-size: 3rem; margin-bottom: 1rem;">🌐</div>
+                <div style="color: var(--neon-cyan); font-family: var(--font-display); letter-spacing: 2px;">ONECANY.GITHUB.IO</div>
+                <div style="margin-top: 0.5rem;">Personal Website — Sci-Fi Edition</div>
+              </div>
+            </div>
+            <div>
+              <div class="project-card-header">
+                <span style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--neon-magenta); letter-spacing: 2px;">FEATURED</span>
+              </div>
+              <div class="project-card-title">onecany.github.io</div>
+              <div class="project-card-desc">
+                Personal website with cyberpunk aesthetic. Built with vanilla HTML/CSS/JS, featuring particle systems, glitch effects, and a fully responsive multi-page design. No frameworks, no dependencies, just pure code.
+              </div>
+              <div class="project-card-footer">
+                <span class="skill-tag">HTML</span>
+                <span class="skill-tag">CSS</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">Design</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Cards -->
+          <div class="project-card reveal reveal-delay-1">
+            <div class="project-card-header">
+              <div class="project-card-icon">📈</div>
+              <div class="project-card-links">
+                <a href="https://github.com/onecany" target="_blank" rel="noopener">GitHub →</a>
+              </div>
+            </div>
+            <div class="project-card-title">Financial Analysis Toolkit</div>
+            <div class="project-card-desc">
+              Python-based toolkit for financial data analysis, including data collection, cleaning, visualization, and automated reporting.
+            </div>
+            <div class="project-card-footer">
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">Pandas</span>
+              <span class="skill-tag">Data Viz</span>
+            </div>
+          </div>
+
+          <div class="project-card reveal reveal-delay-2">
+            <div class="project-card-header">
+              <div class="project-card-icon">🤖</div>
+              <div class="project-card-links">
+                <a href="https://github.com/onecany" target="_blank" rel="noopener">GitHub →</a>
+              </div>
+            </div>
+            <div class="project-card-title">AI Data Pipeline</div>
+            <div class="project-card-desc">
+              End-to-end data pipeline for training and deploying machine learning models, with automated feature engineering and model evaluation.
+            </div>
+            <div class="project-card-footer">
+              <span class="skill-tag">PyTorch</span>
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">ML</span>
+            </div>
+          </div>
+
+          <div class="project-card reveal reveal-delay-3">
+            <div class="project-card-header">
+              <div class="project-card-icon">🏗️</div>
+              <div class="project-card-links">
+                <a href="https://github.com/onecany" target="_blank" rel="noopener">GitHub →</a>
+              </div>
+            </div>
+            <div class="project-card-title">Web Architecture Lab</div>
+            <div class="project-card-desc">
+              Experiments in elegant web architecture — RESTful APIs, microservices patterns, and reusable component design systems.
+            </div>
+            <div class="project-card-footer">
+              <span class="skill-tag">TypeScript</span>
+              <span class="skill-tag">Go</span>
+              <span class="skill-tag">API</span>
+            </div>
+          </div>
+
+          <div class="project-card reveal reveal-delay-4">
+            <div class="project-card-header">
+              <div class="project-card-icon">⚡</div>
+              <div class="project-card-links">
+                <a href="https://github.com/onecany" target="_blank" rel="noopener">GitHub →</a>
+              </div>
+            </div>
+            <div class="project-card-title">Automation Scripts</div>
+            <div class="project-card-desc">
+              Collection of bash and Python automation scripts for DevOps tasks, data processing, and workflow optimization.
+            </div>
+            <div class="project-card-footer">
+              <span class="skill-tag">Bash</span>
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">Linux</span>
+            </div>
+          </div>
+
+          <div class="project-card reveal reveal-delay-5">
+            <div class="project-card-header">
+              <div class="project-card-icon">📊</div>
+              <div class="project-card-links">
+                <a href="https://github.com/onecany" target="_blank" rel="noopener">GitHub →</a>
+              </div>
+            </div>
+            <div class="project-card-title">Data Dashboard</div>
+            <div class="project-card-desc">
+              Interactive data visualization dashboard with real-time updates, designed for monitoring and analysis workflows.
+            </div>
+            <div class="project-card-footer">
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">SQL</span>
+              <span class="skill-tag">Dashboard</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- GitHub Profile Stats -->
+        <div class="mt-4 reveal">
+          <div class="terminal-card">
+            <div class="terminal-header">
+              <div class="terminal-dot red"></div>
+              <div class="terminal-dot yellow"></div>
+              <div class="terminal-dot green"></div>
+              <span class="terminal-title">github_stats.sh</span>
+            </div>
+            <div class="terminal-body">
+              <div><span class="prompt">$</span> <span class="cmd">gh api users/onecany</span></div>
+              <div class="output mt-1">
+                <span class="text-cyan">public_repos:</span> multiple<br>
+                <span class="text-cyan">followers:</span> growing<br>
+                <span class="text-cyan">commits:</span> <span class="text-green">3,890+</span> and counting
+              </div>
+              <div class="mt-2"><span class="prompt">$</span> <span class="cmd">echo "Building the future, one commit at a time."</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="stats-row mt-3 reveal" id="github-stats"></div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-social">
+            <a href="https://github.com/onecany" target="_blank" rel="noopener" title="GitHub">GH</a>
+            <a href="https://twitter.com/onecany" target="_blank" rel="noopener" title="Twitter/X">X</a>
+            <a href="mailto:onecany@outlook.com" title="Email">@</a>
+          </div>
+          <p class="footer-text">
+            Built with <span class="heart">♥</span> by CANY &copy; 2026
+          </p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | OneCany</title>
+  <meta name="description" content="Get in touch with OneCany.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Orbitron:wght@600;700;800;900&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+</head>
+<body>
+  <canvas id="particles-canvas"></canvas>
+  <div class="grid-bg"></div>
+
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">CANY<span class="dot">.</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+    <div class="nav-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <div class="page-wrapper">
+    <section class="hero" style="min-height: auto; padding-top: 8rem; padding-bottom: 2rem;">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">// contact</span>
+          <h1 class="section-title" style="font-size: clamp(2.5rem, 5vw, 3.5rem);">Get In Touch</h1>
+          <div class="section-line"></div>
+        </div>
+      </div>
+    </section>
+
+    <section style="padding-top: 0;">
+      <div class="container">
+        <div class="contact-grid">
+
+          <!-- Left: Contact Info -->
+          <div class="contact-info">
+            <div class="reveal">
+              <p style="color: var(--text-secondary); font-size: 1.05rem; margin-bottom: 2rem;">
+                Always open to interesting conversations. Whether it's about code, AI, finance, or just life — drop me a line.
+              </p>
+            </div>
+
+            <a href="https://github.com/onecany" target="_blank" rel="noopener" class="contact-item reveal reveal-delay-1">
+              <div class="contact-item-icon">⌨️</div>
+              <div>
+                <div class="contact-item-label">GitHub</div>
+                <div class="contact-item-value">@onecany</div>
+              </div>
+            </a>
+
+            <a href="https://twitter.com/onecany" target="_blank" rel="noopener" class="contact-item reveal reveal-delay-2">
+              <div class="contact-item-icon">🐦</div>
+              <div>
+                <div class="contact-item-label">Twitter / X</div>
+                <div class="contact-item-value">@onecany</div>
+              </div>
+            </a>
+
+            <a href="mailto:onecany@outlook.com" class="contact-item reveal reveal-delay-3">
+              <div class="contact-item-icon">📧</div>
+              <div>
+                <div class="contact-item-label">Email</div>
+                <div class="contact-item-value">onecany@outlook.com</div>
+              </div>
+            </a>
+
+            <!-- Terminal Status -->
+            <div class="mt-3 reveal reveal-delay-4">
+              <div class="terminal-card">
+                <div class="terminal-header">
+                  <div class="terminal-dot red"></div>
+                  <div class="terminal-dot yellow"></div>
+                  <div class="terminal-dot green"></div>
+                  <span class="terminal-title">status.check</span>
+                </div>
+                <div class="terminal-body">
+                  <div><span class="prompt">$</span> <span class="cmd">ping onecany</span></div>
+                  <div class="output mt-1">
+                    PING onecany (localhost):<br>
+                    <span class="text-green">● status: online</span><br>
+                    <span class="text-cyan">● mood: curious</span><br>
+                    <span class="text-magenta">● open_to: collaborations</span><br>
+                    <span class="text-green">● response_time: usually quick</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Contact Form -->
+          <div class="reveal reveal-delay-2">
+            <form class="contact-form" onsubmit="handleSubmit(event)">
+              <div class="form-group">
+                <label class="form-label">Your Name</label>
+                <input type="text" class="form-input" placeholder="John Doe" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Your Email</label>
+                <input type="email" class="form-input" placeholder="john@example.com" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Subject</label>
+                <input type="text" class="form-input" placeholder="What's this about?">
+              </div>
+              <div class="form-group">
+                <label class="form-label">Message</label>
+                <textarea class="form-textarea" placeholder="Type your message here..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary form-submit">
+                TRANSMIT MESSAGE →
+              </button>
+            </form>
+
+            <div id="form-success" style="display: none; text-align: center; padding: 2rem; background: var(--bg-card); border: 1px solid rgba(57, 255, 20, 0.3); border-radius: 8px; margin-top: 1rem;">
+              <div style="font-size: 2rem; margin-bottom: 1rem;">✅</div>
+              <div style="font-family: var(--font-mono); color: var(--neon-green); letter-spacing: 1px;">MESSAGE TRANSMITTED</div>
+              <div style="color: var(--text-secondary); margin-top: 0.5rem; font-size: 0.9rem;">Thanks for reaching out. I'll get back to you soon.</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-social">
+            <a href="https://github.com/onecany" target="_blank" rel="noopener" title="GitHub">GH</a>
+            <a href="https://twitter.com/onecany" target="_blank" rel="noopener" title="Twitter/X">X</a>
+            <a href="mailto:onecany@outlook.com" title="Email">@</a>
+          </div>
+          <p class="footer-text">
+            Built with <span class="heart">♥</span> by CANY &copy; 2026
+          </p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="main.js"></script>
+  <script>
+    function handleSubmit(e) {
+      e.preventDefault();
+      const form = e.target;
+      const success = document.getElementById('form-success');
+
+      // Simple visual feedback (no backend)
+      form.style.display = 'none';
+      success.style.display = 'block';
+    }
+  </script>
+</body>
+</html>
