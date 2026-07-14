@@ -35,7 +35,7 @@ class ParticleSystem {
         vy: (Math.random() - 0.5) * 0.5,
         size: Math.random() * 1.5 + 0.5,
         opacity: Math.random() * 0.5 + 0.1,
-        color: Math.random() > 0.7 ? '#5a7fa8' : '#7fb3ff'
+        color: Math.random() > 0.6 ? '#ff2d95' : (Math.random() > 0.5 ? '#b829f5' : '#00f0ff')
       });
     }
   }
@@ -77,7 +77,7 @@ class ParticleSystem {
           this.ctx.beginPath();
           this.ctx.moveTo(this.particles[i].x, this.particles[i].y);
           this.ctx.lineTo(this.particles[j].x, this.particles[j].y);
-          this.ctx.strokeStyle = `rgba(127, 179, 255, ${0.08 * (1 - dist / 120)})`;
+          this.ctx.strokeStyle = `rgba(0, 240, 255, ${0.1 * (1 - dist / 120)})`;
           this.ctx.lineWidth = 0.5;
           this.ctx.stroke();
         }
