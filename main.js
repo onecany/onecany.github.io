@@ -215,19 +215,6 @@ function animateCounters() {
   });
 }
 
-// ---- WakaTime Card ----
-function injectWakaTime() {
-  const container = document.getElementById('wakatime-container');
-  if (!container) return;
-
-  container.innerHTML = `
-    <div class="wakatime-bar">
-      <img src="https://github-readme-stats.vercel.app/api/wakatime?username=onecany&layout=compact&text_color=f0f6fc&bg_color=00000000&hide_border=true&hide_title=true"
-           alt="WakaTime Stats" loading="lazy" />
-    </div>
-  `;
-}
-
 // ---- GitHub Stats ----
 function injectGitHubStats() {
   const container = document.getElementById('github-stats');
@@ -237,8 +224,6 @@ function injectGitHubStats() {
     <div class="stats-row">
       <img src="https://github-readme-streak-stats.herokuapp.com/?user=onecany&theme=dark&hide_border=true"
            alt="GitHub Streak" loading="lazy" />
-      <img src="https://github-profile-trophy.vercel.app/?username=onecany"
-           alt="GitHub Trophies" loading="lazy" />
     </div>
   `;
 }
@@ -270,7 +255,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // Dynamic content
-  injectWakaTime();
   injectGitHubStats();
 
   // Typing effect for terminal
