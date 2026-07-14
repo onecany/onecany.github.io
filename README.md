@@ -70,27 +70,17 @@ mindmap
 
 <div align="center">
 
-![WakaTime](https://github-readme-stats.vercel.app/api/wakatime?username=onecany&layout=compact&text_color=f0f6fc&bg_color=0a0a12&hide_border=true&hide_title=true&border_color=1a0a2e)
-
-</div>
-
-<br>
-
-<div align="center">
-
 ![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=onecany&theme=dark&hide_border=true)
 
-![GitHub Trophies](https://github-profile-trophy.vercel.app/?username=onecany&theme=dark&no-frame=true&column=7)
-
 </div>
 
 <br>
 
 <div align="center">
 
-![Top Languages](https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=onecany&hide_title=true&hide_border=true&layout=compact&langs_count=6&text_color=f0f6fc&icon_color=00f0ff&bg_color=0a0a12&border_color=1a0a2e)
+![Top Languages](https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=onecany&hide_title=true&hide_border=true&layout=compact&langs_count=6&text_color=f0f6fc&icon_color=00f0ff&bg_color=0a0a12&border_color=1a0a2e)
 
-![GitHub Stats](https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=onecany&hide_title=true&hide_border=true&show_icons=true&text_color=f0f6fc&icon_color=ff2d95&bg_color=0a0a12&border_color=1a0a2e)
+![GitHub Stats](https://github-readme-stats-sigma-five.vercel.app/api?username=onecany&hide_title=true&hide_border=true&show_icons=true&text_color=f0f6fc&icon_color=ff2d95&bg_color=0a0a12&border_color=1a0a2e)
 
 </div>
 
