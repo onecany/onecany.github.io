@@ -1,60 +1,25 @@
 <div align="center">
-  <a href="https://github.com/onecany">
-    <img src="https://readme-typing-svg.herokuapp.com/?lines=console.log(%22Hello%2C%20World!%22);江小生祝您今天愉快!&center=true&size=20">
-  </a>
 
+![Header](https://readme-typing-svg.herokuapp.com/?lines=%3E+SYSTEM_INIT+%7C+%E6%B1%9F%E5%B0%8F%E7%94%9F&center=true&size=22&color=00F0FF&duration=2000&center=true&vCenter=true&multiline=true&repeat=true&width=600&height=100&duration=3000&pause=1500&color=00F0FF)
 
-  <!-- Snake Code Contribution Map 贪吃蛇代码贡献图 -->
+![Crimson](https://capsule-render.vercel.app/api?type=waving&color=0:0a0a12,50:1a0a2e,100:0a0a12&height=120&section=header&text=ONECANY&fontSize=50&fontColor=00F0ff&fontAlignY=35&desc=%7C+Developer+.+Reader+.+Explorer+%7C&descSize=14&descAlignY=55&descAlign=50&animation=fadeIn&descFontColor=ff2d95)
 
 </div>
 
-
-#  🙋 Hello World
-
-<table>
-<tr>
-  <td>
-
-<!-- About me 关于我 -->
-### 🤺 About Me
-
-
-<p>&emsp;&emsp;大家好，我是江小生。</p>
-<p>&emsp;&emsp;热爱阅读、旅行、骑行。</p>
-
- <!-- <p>&emsp;&emsp;热爱计算机科学和生命科学事业。</p> -->
-<p>&emsp;&emsp;我们正在让这个世界变得更加美好，通过代码的重复使用和延展构建完美体系。</p>
-
-<p>
-  <strong>&emsp;&emsp;We're making the world a better place. Through constructing elegant hierarchies for maximum code reuse and extensibility.</strong>
-</p>
-    </td>
-</tr>
-</table>
 <br>
 
+## ⚡ about.me
 
-<!-- just img 图片 -->
-<img src="https://raw.githubusercontent.com/onecany/onecany/main/assets/moves.gif" alt="what is coder?" />
+> We're making the world a better place.
+> Through constructing elegant hierarchies for maximum code reuse and extensibility.
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/onecany/onecany/main/assets/moves.gif" alt="what is coder?" width="400" />
+</p>
 
+<br>
 
-<!-- wakatime 统计 -->
-### 📊 WakaTime
-
-<picture>
-  <source
-    srcset="https://github-readme-stats.vercel.app/api/wakatime?username=onecany&layout=compact&text_color=f0f6fc&bg_color=00000000&hide_border=true&hide_title=true"
-    media="(prefers-color-scheme: dark)"
-  />
-  <source
-    srcset="https://github-readme-stats.vercel.app/api/wakatime?username=onecany&layout=compact&text_color=1f2328&bg_color=00000000&hide_border=true&hide_title=true"
-    media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
-  />
-  <img src="https://github-readme-stats.vercel.app/api/wakatime?username=onecany&layout=compact&text_color=f0f6fc&bg_color=00000000&hide_border=true&hide_title=true" />
-</picture>
-
-</br>
+## 🧠 interests
 
 ```mermaid
 mindmap
@@ -80,46 +45,65 @@ mindmap
       计算机科学
 ```
 
-<!-- just img 图片 -->
-<img src="https://raw.githubusercontent.com/onecany/onecany/main/assets/images/man.png" alt="Man Lifting Weights" width="250" height="250" />
+<br>
 
-<!--  skill badge 技能徽章 -->
-🧠🧰 常用的工具
+## 🛠️ tech_stack
 
-![Xiaomi Badge](https://img.shields.io/badge/Xiaomi-FF6900?logo=xiaomi&logoColor=fff&style=flat)
+<div align="center">
 
-![Linux Badge](https://img.shields.io/badge/Linux-FCC624?logo=linux&logoColor=000&style=flat)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Go](https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
 
-![Visual Studio Code Badge](https://img.shields.io/badge/Visual%20Studio%20Code-007ACC?logo=visualstudiocode&logoColor=fff&style=flat)
+<br>
 
-![GitHub Badge](https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=fff&style=flat)
+<img src="https://skillicons.dev/icons?i=python,golang,mysql,css,ts,discord,twitter,mongodb,instagram,vscode,git" />
 
-<!-- programming tool icon 编程工具图标 -->
-<img src="https://skillicons.dev/icons?i=python,golang,mysql,css,ts,discord,twitter,mongodb,instagram,vscode,git" /><br>
+</div>
 
+<br>
 
+## 📊 stats
 
-<!-- all lang in one  icon-->
-<img src="https://raw.githubusercontent.com/onecany/onecany/main/assets/images/icon.png" /></div>
+<div align="center">
 
+![WakaTime](https://github-readme-stats.vercel.app/api/wakatime?username=onecany&layout=compact&text_color=f0f6fc&bg_color=0a0a12&hide_border=true&hide_title=true&border_color=1a0a2e)
 
+</div>
 
+<br>
 
+<div align="center">
 
 ![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=onecany&theme=dark&hide_border=true)
 
-![pytorch](https://github-profile-trophy.vercel.app/?username=onecany)
+![GitHub Trophies](https://github-profile-trophy.vercel.app/?username=onecany&theme=dark&no-frame=true&column=7)
 
-
-
-<img src="https://readme-jokes.vercel.app/api?hideBorder&bgColor=%23121212" alt="Jokes Card" />
-<img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark" />
-
-<!-- 代码贡献 -->
-<div align="center">
-    <img  src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=onecany&hide_title=true&hide_border=true&layout=compact&langs_count=6&text_color=000&icon_color=fff&bg_color=0,52fa5a,4dfcff,c64dff&theme=graywhite" />
 </div>
 
+<br>
+
 <div align="center">
-    <img height="137px" src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=onecany&hide_title=true&hide_border=true&show_icons=trueline_height=21&text_color=000&icon_color=000&bg_color=0,ea6161,ffc64d,fffc4d,52fa5a&theme=graywhite" />
+
+![Top Languages](https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=onecany&hide_title=true&hide_border=true&layout=compact&langs_count=6&text_color=f0f6fc&icon_color=00f0ff&bg_color=0a0a12&border_color=1a0a2e)
+
+![GitHub Stats](https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=onecany&hide_title=true&hide_border=true&show_icons=true&text_color=f0f6fc&icon_color=ff2d95&bg_color=0a0a12&border_color=1a0a2e)
+
+</div>
+
+<br>
+
+---
+
+<div align="center">
+
+**[🌐 MY SITE](https://onecany.github.io)** · **[GH PROFILE](https://github.com/onecany)** · **[X/TWITTER](https://twitter.com/onecany)**
+
+<br>
+
+![Visitor Count](https://komarev.com/ghpvc/?username=onecany&color=00F0FF&style=for-the-badge&label=PROFILE+VISITORS)
+
 </div>
