@@ -126,19 +126,19 @@ function initNav() {
   const navAnchors = document.querySelectorAll('.nav-links a');
 
   // Scroll behavior
-  let lastScroll = 0;
-  window.addEventListener('scroll', () => {
-    const currentScroll = window.scrollY;
-    if (currentScroll > 50) {
-      nav.classList.add('scrolled');
-    } else {
-      nav.classList.remove('scrolled');
-    }
-    lastScroll = currentScroll;
-  });
+  if (nav) {
+    window.addEventListener('scroll', () => {
+      const currentScroll = window.scrollY;
+      if (currentScroll > 50) {
+        nav.classList.add('scrolled');
+      } else {
+        nav.classList.remove('scrolled');
+      }
+    });
+  }
 
   // Mobile toggle
-  if (toggle) {
+  if (toggle && links) {
     toggle.addEventListener('click', () => {
       links.classList.toggle('open');
       toggle.classList.toggle('active');
@@ -200,7 +200,8 @@ function typeWriter(element, text, speed = 50) {
 function animateCounters() {
   const counters = document.querySelectorAll('[data-count]');
   counters.forEach(counter => {
-    const target = parseInt(counter.getAttribute('data-count'));
+    const target = parseInt(counter.getAttribute('data-count'), 10);
+    if (isNaN(target)) return;
     const duration = 2000;
     const start = Date.now();
 

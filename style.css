@@ -14,7 +14,6 @@
   --neon-magenta: #ff2d95;
   --neon-purple: #b829f5;
   --neon-green: #39ff14;
-  --neon-orange: #ff6a00;
   --neon-blue: #6c3bff;
 
   --text-primary: #e8e0f0;
@@ -81,7 +80,7 @@ body::after {
   width: 100%;
   height: 100%;
   pointer-events: none;
-  z-index: 9999;
+  z-index: 999;
   background: repeating-linear-gradient(
     0deg,
     transparent,
@@ -731,37 +730,6 @@ section {
   letter-spacing: 0.5px;
 }
 
-/* Tech Logos Row */
-.tech-logos {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-  margin-top: 3rem;
-  padding: 2rem;
-}
-
-.tech-logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 60px;
-  height: 60px;
-  border-radius: var(--radius-lg);
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.06);
-  font-size: 1.8rem;
-  transition: all 0.3s ease;
-  position: relative;
-}
-
-.tech-logo:hover {
-  background: rgba(0, 240, 255, 0.08);
-  border-color: rgba(0, 240, 255, 0.3);
-  transform: scale(1.15);
-  box-shadow: var(--glow-cyan);
-}
-
 /* ============================================
    PROJECTS PAGE
    ============================================ */
@@ -1091,19 +1059,18 @@ section {
   50% { opacity: 0; }
 }
 
-@keyframes float {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-10px); }
+
+/* Page hero (sub-pages) */
+.page-hero {
+  min-height: auto;
+  padding-top: 10rem;
+  padding-bottom: 3rem;
 }
 
-@keyframes pulse-glow {
-  0%, 100% { box-shadow: 0 0 10px rgba(0, 240, 255, 0.2); }
-  50% { box-shadow: 0 0 20px rgba(0, 240, 255, 0.4); }
-}
-
-@keyframes rotate {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+/* Page content section */
+.page-content {
+  padding-top: 0;
+  padding-bottom: 4rem;
 }
 
 /* ============================================
@@ -1405,19 +1372,6 @@ section {
   }
 }
 
-/* Page hero (sub-pages) */
-.page-hero {
-  min-height: auto;
-  padding-top: 10rem;
-  padding-bottom: 3rem;
-}
-
-/* Page content section */
-.page-content {
-  padding-top: 0;
-  padding-bottom: 4rem;
-}
-
 /* ============================================
    UTILITY CLASSES
    ============================================ */
@@ -1441,20 +1395,6 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-/* WakaTime bar style override */
-.wakatime-bar {
-  margin-top: 2rem;
-  padding: 1.5rem;
-  background: var(--bg-card);
-  border: var(--border-subtle);
-  border-radius: var(--radius-lg);
-}
-
-.wakatime-bar img {
-  width: 100%;
-  border-radius: var(--radius);
 }
 
 /* GitHub Readme Stats */
@@ -1502,4 +1442,25 @@ section {
 
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(0, 240, 255, 0.5);
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Print */
+@media print {
+  body::before, body::after, .grid-bg, #particles-canvas, .nav, .footer-social {
+    display: none !important;
+  }
+  body {
+    background: #fff;
+    color: #000;
+  }
 }
