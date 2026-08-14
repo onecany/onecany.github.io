@@ -1410,6 +1410,13 @@ section {
   border-radius: var(--radius);
 }
 
+/* Live GitHub stats cards (rendered from the GitHub REST API) */
+.gh-card {
+  flex: 1 1 340px;
+  max-width: 480px;
+  min-width: 0;
+}
+
 /* Page transition */
 .page-wrapper {
   animation: pageIn 0.5s ease;

@@ -217,18 +217,96 @@ function animateCounters() {
 }
 
 // ---- GitHub Stats ----
+// Fetches live data from the GitHub REST API and renders terminal-style cards.
+// (Previous implementation used third-party SVG badge services that are now dead.)
 function injectGitHubStats() {
   const container = document.getElementById('github-stats');
   if (!container) return;
 
-  container.innerHTML = `
-    <div class="stats-row">
-      <img src="https://github-readme-streak-stats.herokuapp.com/?user=onecany&theme=dark&hide_border=true"
-           alt="GitHub Streak" loading="lazy" />
-      <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=onecany&hide_title=true&hide_border=true&show_icons=true&text_color=f0f6fc&icon_color=ff2d95&bg_color=0a0a12&border_color=1a0a2e"
-           alt="GitHub Stats" loading="lazy" style="border-radius: 8px;" />
-    </div>
-  `;
+  const GITHUB_USER = 'onecany';
+  const fallback = () => {
+    container.innerHTML = `
+      <div class="stats-row">
+        <div class="terminal-card gh-card">
+          <div class="terminal-header">
+            <div class="terminal-dot red"></div>
+            <div class="terminal-dot yellow"></div>
+            <div class="terminal-dot green"></div>
+            <span class="terminal-title">github_stats.sh</span>
+          </div>
+          <div class="terminal-body">
+            <div><span class="prompt">$</span> <span class="cmd">gh api users/${GITHUB_USER}</span></div>
+            <div class="output mt-1">
+              <span class="text-cyan">public_repos:</span> multiple<br>
+              <span class="text-cyan">followers:</span> growing<br>
+              <span class="text-cyan">commits:</span> <span class="text-green">3,890+</span> and counting
+            </div>
+          </div>
+        </div>
+      </div>
+    `;
+  };
+
+  Promise.all([
+    fetch(`https://api.github.com/users/${GITHUB_USER}`),
+    fetch(`https://api.github.com/users/${GITHUB_USER}/repos?per_page=100&sort=updated`)
+  ])
+    .then(responses => Promise.all(responses.map(r => {
+      if (!r.ok) throw new Error(`GitHub API ${r.status}`);
+      return r.json();
+    })))
+    .then(([user, repos]) => {
+      if (!user || typeof user.public_repos !== 'number') throw new Error('bad payload');
+      const totalStars = repos.reduce((sum, r) => sum + (r.stargazers_count || 0), 0);
+      const langCount = {};
+      repos.forEach(r => {
+        if (r.language) langCount[r.language] = (langCount[r.language] || 0) + 1;
+      });
+      const topLangs = Object.entries(langCount)
+        .sort((a, b) => b[1] - a[1])
+        .slice(0, 3)
+        .map(([lang]) => lang)
+        .join(', ') || 'N/A';
+      const latestRepo = repos[0] ? repos[0].name : 'N/A';
+
+      container.innerHTML = `
+        <div class="stats-row">
+          <div class="terminal-card gh-card">
+            <div class="terminal-header">
+              <div class="terminal-dot red"></div>
+              <div class="terminal-dot yellow"></div>
+              <div class="terminal-dot green"></div>
+              <span class="terminal-title">profile.json</span>
+            </div>
+            <div class="terminal-body">
+              <div><span class="prompt">$</span> <span class="cmd">gh api users/${GITHUB_USER}</span></div>
+              <div class="output mt-1">
+                <span class="text-cyan">public_repos:</span> ${user.public_repos.toLocaleString()}<br>
+                <span class="text-cyan">followers:</span> ${user.followers.toLocaleString()}<br>
+                <span class="text-cyan">following:</span> ${user.following.toLocaleString()}
+              </div>
+            </div>
+          </div>
+          <div class="terminal-card gh-card">
+            <div class="terminal-header">
+              <div class="terminal-dot red"></div>
+              <div class="terminal-dot yellow"></div>
+              <div class="terminal-dot green"></div>
+              <span class="terminal-title">repos.json</span>
+            </div>
+            <div class="terminal-body">
+              <div><span class="prompt">$</span> <span class="cmd">gh api repos --sort=updated</span></div>
+              <div class="output mt-1">
+                <span class="text-cyan">total_stars:</span> ${totalStars.toLocaleString()}<br>
+                <span class="text-cyan">top_langs:</span> ${topLangs}<br>
+                <span class="text-cyan">latest:</span> ${latestRepo}
+              </div>
+            </div>
+          </div>
+        </div>
+      `;
+    })
+    .catch(fallback);
 }
 
 // ---- Init ----
